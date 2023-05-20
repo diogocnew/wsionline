@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px; /*Garante o tamanho padrão de fonte*/
+}
+
+::-webkit-scrollbar {
+  width: 8px; /*Define a largura da scrollbar*/
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2c2c31; /*Define a cor de caminho da scrollbar*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9e9ea0; /*Define a cor da scrollbar*/
+}
+
+#navbar {
+  box-sizing: border-box;
+  display: inline;
+  width: 20%;
+  margin: auto;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+ul li img {
+  display: inline;
+  float: left;
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+ul li {
+  display: inline;
+  float: left;
+  padding: 12px;
+}
+
+ul a {
+  display: block;
+  padding: 22px;
+}
+
+li a {
+  display: block;
+  color: #00499d;
+  text-align: center;
+  align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #9ecbec;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 4%;
+  transition-duration: 0.4s;
+}
+
+.active:hover {
+  background-color: #2f7eb7;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas:
+    "firstPage"
+    "secondPage";
+  grid-template-rows: 100vh;
+}
+
+.landingPage {
+  overflow-y: scroll;
+  overflow: visible;
+  padding: 22px;
+}
+
+.page1 {
+  display: flexbox;
+  padding: 210px;
+  grid-area: primeira;
+}
+
+.page2 {
+  display: flexbox;
+  padding: 210px;
+  grid-area: segunda;
+}
+
+.solutions {
+  display: flex;
+  flex-direction: row;
+}
+
+.solutions div {
+  border-style: groove;
+  padding: 50px;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
