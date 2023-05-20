@@ -75,6 +75,7 @@ ul li a:hover {
 }
 
 .active {
+  float: right;
   background-color: #9ecbec;
   color: white;
   font-size: 1rem;
